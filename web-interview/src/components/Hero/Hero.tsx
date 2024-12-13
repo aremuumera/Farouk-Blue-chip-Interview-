@@ -30,7 +30,7 @@ const StatCard = ({ value, label }: { value: string | number; label: string }) =
 
 const UserInfoCard = ({ name, jobTitle, location, email, earnings, referrals, activeTab, deals, setActiveTab }: UserInfoCardTypes) => {
 
-  return ( <div className="w-full bg-white px-[20px] pt-[20px] md:px-[30px] md:pt-[30px] rounded-[20px] mt-[20px] md:mt-[30px] shadow-sm">
+  return ( <div className="w-full bg-white scrollHide  px-[20px] pt-[20px] md:px-[30px] md:pt-[30px] rounded-[20px] mt-[20px] md:mt-[30px] shadow-sm">
         <div className="flex flex-col relative lg:flex-row gap-[20px] lg:gap-[40px]">
             {/* User Profile Image */}
             <div className="relative mx-auto lg:mx-0">

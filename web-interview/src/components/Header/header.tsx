@@ -134,7 +134,7 @@ export default function Header() {
 
 
       {/* Bottom Subnavigation */}
-      <div className="bg-white  w-full mx-auto h-full py-[20px] text-[#80808F]">
+      <div className="bg-white  w-full mx-auto h-full py-[20px] scrollHide  text-[#80808F]">
         <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8 flex lg:gap-[10px] overflow-x-auto whitespace-nowrap scrollbar-hide">
           {bottomNavItems.map((item, index) => (
             <button

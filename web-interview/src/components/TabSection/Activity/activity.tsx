@@ -98,14 +98,14 @@ const SwitchIcon = (eventType: string) => {
 
                           <div className="">
                             {event.tasks && (
-                            <ul className="mt-2 w-full space-y-2">
+                            <ul className="mt-2 w-full scrollHide  space-y-2">
                               {event.tasks.map((task, i) => (
                                 <li
                                   key={i}
                                   className="flex md:flex-row flex-col gap-[16px] scrollHide  justify-between border-[1px] border-gray-200 rounded-md w-full p-[10px]"
                                 >
                                   <span className="text-[600] text-[18px]">{task.title}</span>
-                                  <div className="flex justify-between overflow-x-auto whitespace-nowrap eventtask scrollbar-hide  scroll-smooth relative items-center gap-[20px] sm:gap-[40px] lg:gap-[80px]">
+                                  <div className="flex justify-between overflow-x-auto scrollbar-hide whitespace-nowrap eventtask scrollbar-hide  scroll-smooth relative items-center gap-[20px] sm:gap-[40px] lg:gap-[80px]">
                                     <span className="bg-[#F5F8FA] whitespace-nowrap text-[12px] text-gray-400 font-[700] px-[10px] py-[6px] rounded-[8px]">
                                       {task.type}
                                     </span>
