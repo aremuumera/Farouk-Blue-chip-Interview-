@@ -7,7 +7,7 @@ const ProInfo = () => {
   return (
     <div>
         <div>
-            <div className='w-full h-[600px] rounded-[10px] bg-white mt-[30px] lg:px-[60px] px-[10px] pt-[60px] max-w-[545px]'>
+            <div className='w-full h-[595px] rounded-[10px] bg-white mt-[30px] lg:px-[60px] px-[10px] pt-[60px] max-w-[545px]'>
                 <div className='text-center text-[22px] font-[700]'>
                     <h2>Upgrade to Pro</h2>
                     <h2 className=''>Create Limitless Deals</h2>

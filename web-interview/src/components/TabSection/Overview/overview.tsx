@@ -7,6 +7,7 @@ import OverviewInfo from "./OverviewInfo";
 import ProInfo from "./ProInfo";
 import Image from "next/image";
 import { X } from "lucide-react";
+import Chart from "./charts";
 
 const Overview = () => {
   const [showModal, setShowModal] = useState(false);
@@ -30,9 +31,10 @@ const Overview = () => {
       </div>
 
       {/* Pro Container */}
-      <div className="hidden lg:block w-full max-w-[550px]">
+      <div className="hidden pt-6 lg:block w-full max-w-[550px]">
         <div>
-          <Image src={"/tabs/overview/Deals.png"} alt="overview" width={545} height={332} />
+          <Chart />
+          {/* <Image src={"/tabs/overview/Deals.png"} alt="overview" width={545} height={332} /> */}
         </div>
         <OverviewInfo />
         <ProInfo />
@@ -52,12 +54,13 @@ const Overview = () => {
           <div className="bg-gray-200 w-11/12 max-w-[550px] p-2 rounded-lg overflow-auto max-h-[90vh]">
             <button
               onClick={handleModalToggle}
-              className="absolute top-12 right-8 text-gray-600 text-lg font-bold"
+              className="absolute top-10 right-4 text-gray-600 text-lg font-bold"
             >
               <X className="text-black" />
             </button>
             <div>
-              <Image src={"/tabs/overview/Deals.png"} alt="overview" width={545} height={332} />
+              <Chart />
+              {/* <Image src={"/tabs/overview/Deals.png"} alt="overview" width={545} height={332} /> */}
             </div>
             <OverviewInfo />
             <ProInfo />

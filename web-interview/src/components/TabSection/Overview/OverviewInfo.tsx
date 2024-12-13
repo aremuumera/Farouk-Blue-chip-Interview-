@@ -83,7 +83,7 @@ interface ProjectItemProps {
   const ProjectItem: React.FC<ProjectItemProps> = ({ image, title, description, statusCount }) => {
     const isHighlighted = statusCount > 0;
     return (
-      <div className="flex pt-[40px] justify-between items-center">
+      <div className="flex pt-[20px] justify-between items-center">
         <div className="flex gap-[15px]">
           <Image src={image} alt={title} width={36} height={36} />
           <div>
