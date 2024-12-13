@@ -18,7 +18,6 @@ type UserInfoCardTypes = {
 
 };
 
-// Tabs for dynamic navigation
 const tabNames = ['Overview', 'Projects', 'Campaigns', 'Documents', 'Followers', 'Activity'];
 
 const StatCard = ({ value, label }: { value: string | number; label: string }) => (
@@ -115,9 +114,6 @@ const UserInfoCard = ({ name, jobTitle, location, email, earnings, referrals, ac
                 </button>
             ))}
         </div>
-
-
-
     </div>)
 };
 
@@ -139,7 +135,6 @@ const Hero = () => {
     return (
         <div className="p-[5px]">
             <main>
-                {/* Breadcrumb Section */}
                 <div className="flex flex-col px-2  md:flex-row justify-between items-start md:items-center gap-[10px] md:gap-[20px] mb-[10px]">
                     <div>
                         <h1 className="text-[20px] font-bold text-[#181C32]">{tabNames[activeTab]}</h1>
@@ -147,10 +142,7 @@ const Hero = () => {
                     </div>
                     <button className="bg-[#1DC894] text-white px-4 py-2 rounded-md">Start Project</button>
                 </div>
-
-                {/* User Info Section */}
                 <UserInfoCard {...user} activeTab={activeTab} setActiveTab={setActiveTab} />
-
             </main>
         </div>
     );

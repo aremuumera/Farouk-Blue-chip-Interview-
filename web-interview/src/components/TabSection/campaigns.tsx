@@ -33,12 +33,10 @@ const Campaigns = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {CampaignsData.map((item) => {
-                        // const styles = getProjectStyles(item.pr);
                         return (
                             <div
                                 key={item.id}
                                 className="p-[30px] bg-white w-full rounded-lg shadow-md"
-                            // style={{borderBottomColor: styles.color, borderBottomWidth: '5px', borderInlineWidth: styles.width}}
                             >
 
                                 <div className='flex justify-between items-center'>
@@ -66,28 +64,28 @@ const Campaigns = () => {
                                 </div>
                                 <div className='py-[25px]'>
                                     <p className="font-[700] pt-[5px] text-[34px]">{item.projectBudget}</p>
-                                    <div className='flex justify-start  items-center'> 
-                                         {
-                                            item.status ?  (
+                                    <div className='flex justify-start  items-center'>
+                                        {
+                                            item.status ? (
                                                 <Image
-                                                  src={'/tabs/campaigns/Up-right.png'}
-                                                  alt='true'
-                                                  width= {19}
-                                                  height= {19}
+                                                    src={'/tabs/campaigns/Up-right.png'}
+                                                    alt='true'
+                                                    width={19}
+                                                    height={19}
                                                 />
                                             ) : (
                                                 <Image
-                                                src={'/tabs/campaigns/Down-left.png'}
-                                                alt='true'
-                                                width= {19}
-                                                height= {19}
+                                                    src={'/tabs/campaigns/Down-left.png'}
+                                                    alt='true'
+                                                    width={19}
+                                                    height={19}
                                                 />
                                             )
-                                         }
-                                         <span> 
-                                            <span className={`${item.status ?  'text-[#50CD89]' : 'text-[#F1416C]'} pr-[5px]`}>
+                                        }
+                                        <span>
+                                            <span className={`${item.status ? 'text-[#50CD89]' : 'text-[#F1416C]'} pr-[5px]`}>
                                                 {item.projectPercentage}
-                                            </span> 
+                                            </span>
                                             <span className='text-[14px] text-gray-400'>
                                                 {item.mediaInfo}
                                             </span>

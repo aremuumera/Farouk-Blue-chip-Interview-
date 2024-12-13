@@ -1,4 +1,3 @@
-// components/DealsChart.tsx
 import React, { useState } from 'react';
 import {
   BarChart,
@@ -72,18 +71,17 @@ const Chart: React.FC = () => {
               domain={[0, (dataMax: number) => Math.ceil(dataMax / 5) * 5]}
             />
             <Tooltip cursor={{ fill: 'rgba(0, 0, 0, 0.1)' }} />
-            {/* Both bars always visible */}
             <Bar
               dataKey="agents"
-              fill={activeTab === 'agents' ? '#00A3FF' : '#D0E6FF'} // Active: Blue, Inactive: Light Blue
+              fill={activeTab === 'agents' ? '#00A3FF' : '#D0E6FF'}
               barSize={10}
-              radius={[3, 3, 0, 0]} // Rounded corners
+              radius={[3, 3, 0, 0]} 
             />
             <Bar
               dataKey="clients"
-              fill={activeTab === 'clients' ? '#00A3FF' : '#EFF2F5'} // Active: Blue, Inactive: Gray
+              fill={activeTab === 'clients' ? '#00A3FF' : '#EFF2F5'}
               barSize={10}
-              radius={[3, 3, 0, 0]} // Rounded corners
+              radius={[3, 3, 0, 0]} 
             />
           </BarChart>
         </ResponsiveContainer>
