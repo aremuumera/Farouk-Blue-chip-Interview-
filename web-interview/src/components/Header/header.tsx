@@ -37,8 +37,8 @@ export default function Header() {
   return (
     <header >
       
-      <div className="bg-primary">
-        <div className="w-full max-w-[1120px] mx-auto">
+      <div className="fixed top-0 left-0 w-full z-50  bg-primary">
+        <div className="w-full max-w-[1120px]  mx-auto">
             {/* Top Navigation */}
             <div className="flex justify-between pt-[15px] items-center px-4 sm:px-6 lg:px-8 h-[72px]">
                 <div className="flex justify-center items-center gap-[20px]">
@@ -134,7 +134,7 @@ export default function Header() {
 
 
       {/* Bottom Subnavigation */}
-      <div className="bg-white  w-full mx-auto h-full py-[20px] scrollHide  text-[#80808F]">
+      <div className="bg-white mt-[80px]  w-full mx-auto h-full py-[20px] scrollHide  text-[#80808F]">
         <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8 flex lg:gap-[10px] overflow-x-auto whitespace-nowrap scrollbar-hide">
           {bottomNavItems.map((item, index) => (
             <button
