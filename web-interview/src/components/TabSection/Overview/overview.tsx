@@ -5,7 +5,6 @@ import Card from "./PostCard";
 import { cardsData } from "@/utils/constant";
 import OverviewInfo from "./OverviewInfo";
 import ProInfo from "./ProInfo";
-import Image from "next/image";
 import { X } from "lucide-react";
 import Chart from "./charts";
 
@@ -18,7 +17,6 @@ const Overview = () => {
 
   return (
     <div className="container mx-auto p-6 flex flex-col lg:flex-row lg:gap-[40px]">
-      {/* Posts Section */}
       <div className="flex-1">
         {cardsData.map((data, index) => (
           <Card key={index} {...data} />
@@ -30,11 +28,9 @@ const Overview = () => {
         </div>
       </div>
 
-      {/* Pro Container */}
       <div className="hidden pt-6 lg:block w-full max-w-[550px]">
         <div>
           <Chart />
-          {/* <Image src={"/tabs/overview/Deals.png"} alt="overview" width={545} height={332} /> */}
         </div>
         <OverviewInfo />
         <ProInfo />
@@ -60,7 +56,6 @@ const Overview = () => {
             </button>
             <div>
               <Chart />
-              {/* <Image src={"/tabs/overview/Deals.png"} alt="overview" width={545} height={332} /> */}
             </div>
             <OverviewInfo />
             <ProInfo />
