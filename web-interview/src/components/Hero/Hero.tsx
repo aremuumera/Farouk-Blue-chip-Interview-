@@ -143,7 +143,7 @@ const Hero = () => {
                 <div className="flex flex-col px-2  md:flex-row justify-between items-start md:items-center gap-[10px] md:gap-[20px] mb-[10px]">
                     <div>
                         <h1 className="text-[20px] font-bold text-[#181C32]">{tabNames[activeTab]}</h1>
-                        <Breadcrumb activeTab={activeTab} activeTabName={tabNames[activeTab]} items={tabNames} />
+                        <Breadcrumb activeTab={activeTab} activeTabName={tabNames[activeTab]} />
                     </div>
                     <button className="bg-[#1DC894] text-white px-4 py-2 rounded-md">Start Project</button>
                 </div>
