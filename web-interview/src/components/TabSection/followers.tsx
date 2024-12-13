@@ -90,6 +90,13 @@ const Followers = () => {
                         );
                     })}
                 </div>
+                <div className='py-[30px] flex justify-center'>
+                    <button
+                    className='bg-primary text-white px-[10px] py-[5px] rounded-[6px]'
+                    >
+                       Show more
+                    </button>
+                </div>
             </div>
         </div>
     )
