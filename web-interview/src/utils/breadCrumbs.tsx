@@ -20,7 +20,7 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ items, activeTab }) => {
         </span>
       ))}
     </nav>
-  );
+  )
 };
 
 export default Breadcrumb;
