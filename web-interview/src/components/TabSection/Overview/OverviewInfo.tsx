@@ -45,11 +45,9 @@ const OverviewInfo = () => {
             </div>
             <Image src={"/tabs/campaigns/Dropdown.png"} alt="overview" width={11} height={11} />
           </div>
-          {/* Render Project Items */}
           {projectData.map((project, index) => (
             <ProjectItem key={index} {...project} />
           ))}
-          {/* Call to Action Section */}
           <div className="w-full rounded-[8px] p-[19px] mt-[20px]  border-dashed border-primary border-[2px] bg-[#F1FAFF]">
             <span className="!text-primary">
               <span className="text-[16px] font-[700]">Intive New .NET Collaborators</span>
