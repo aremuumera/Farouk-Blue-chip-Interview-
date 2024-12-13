@@ -2,7 +2,6 @@
 import Header from "@/components/Header/header";
 import Hero from "@/components/Hero/Hero";
 import TabSection from "@/components/TabSection";
-import Project from "@/components/TabSection/project";
 
 
 export default function Home() {
