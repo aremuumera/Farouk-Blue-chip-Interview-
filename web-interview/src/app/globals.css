@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  /* color: var(--background); */
+  /* background: var(--background); */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.nextjs-static-indicator-toast-wrapper, .nextjs-toast-hide-button, .nextjs-static-indicator-toast-icon, .nextjs-static-indicator-toast-text {
+  display: none!important;
+}
+
+
+
+.doctab {
+
+}
+
+@media screen and (max-width: 508px) {
+  .eventtask {
+    padding-right: 50px;
+  }
+  
+}
+
+.scrollHide ul::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollHide ul {
+  -ms-overflow-style: none; /* IE 10+ */
+  scrollbar-width: none; /* Firefox */
+}
