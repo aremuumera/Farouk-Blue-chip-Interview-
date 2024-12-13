@@ -29,7 +29,7 @@ const StatCard = ({ value, label }: { value: string | number; label: string }) =
 
 const UserInfoCard = ({ name, jobTitle, location, email, earnings, referrals, activeTab, deals, setActiveTab }: UserInfoCardTypes) => {
 
-  return ( <div className="w-full bg-white scrollHide  px-[20px] pt-[20px] md:px-[30px] md:pt-[30px] rounded-[20px] mt-[20px] md:mt-[30px] shadow-sm">
+    return (<div className="w-full bg-white scrollHide  px-[20px] pt-[20px] md:px-[30px] md:pt-[30px] rounded-[20px] mt-[20px] md:mt-[30px] shadow-sm">
         <div className="flex flex-col relative lg:flex-row gap-[20px] lg:gap-[40px]">
             {/* User Profile Image */}
             <div className="relative mx-auto lg:mx-0">
@@ -105,10 +105,10 @@ const UserInfoCard = ({ name, jobTitle, location, email, earnings, referrals, ac
                 <button
                     key={item}
                     className={`pb-6 px-4 text-sm  font-[600] ${activeTab === index
-                            ? "text-primary border-b-[2px] border-b-primary "
-                            : "hover:text-blue-400 text-[#A1A5B7] "
+                        ? "text-primary border-b-[2px] border-b-primary "
+                        : "hover:text-blue-400 text-[#A1A5B7] "
                         }`}
-                  onClick={() => setActiveTab && setActiveTab(index)}
+                    onClick={() => setActiveTab && setActiveTab(index)}
                 >
                     {item}
                 </button>
