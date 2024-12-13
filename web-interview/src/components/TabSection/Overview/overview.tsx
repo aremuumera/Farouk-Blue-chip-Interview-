@@ -1,4 +1,5 @@
-// File: pages/profile.tsx
+'use client'
+
 import React, { useState } from "react";
 import Card from "./PostCard";
 import { cardsData } from "@/utils/constant";

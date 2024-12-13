@@ -1,4 +1,4 @@
-import { CampaignsData, FollowersData, } from '@/utils/constant';
+import {  FollowersData, } from '@/utils/constant';
 import Image from 'next/image';
 import React from 'react'
 

@@ -1,5 +1,6 @@
+'use client'
 
-// File: components/Card.tsx
+
 import React from "react";
 import Image from "next/image";
 
