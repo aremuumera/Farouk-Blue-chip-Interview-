@@ -22,9 +22,9 @@ type UserInfoCardTypes = {
 const tabNames = ['Overview', 'Projects', 'Campaigns', 'Documents', 'Followers', 'Activity'];
 
 const StatCard = ({ value, label }: { value: string | number; label: string }) => (
-    <div className="border-dashed text-left border-[1px] px-[16px] py-[8px] border-[#e4e6ef] rounded-md flex flex-col ">
+    <div className="border-dashed text-left border-[1px] px-[10px] sm:px-[16px] py-[8px] border-[#e4e6ef] rounded-md flex flex-col ">
         <h1 className="font-bold text-[24px] text-[#181C32]">{value}</h1>
-        <h2 className="text-[14px] font-medium text-[#B5B5C3]">{label}</h2>
+        <h2 className="sm:text-[14px] text-[12px] font-medium text-[#B5B5C3]">{label}</h2>
     </div>
 );
 
