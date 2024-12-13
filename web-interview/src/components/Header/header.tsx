@@ -156,12 +156,23 @@ export default function Header() {
 
       {/* Mobile Menu Drawer */}
       <div
-        className={`fixed top-0 right-0 w-64 h-full bg-primary text-white transform ${
+        className={`fixed top-0 right-0 w-full h-full bg-primary text-white transform ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 shadow-lg z-50`}
       >
         <div className="flex justify-between items-center p-4">
-          <span className="font-bold text-lg">Menu</span>
+          <span className="font-bold text-lg">
+          <div className="">
+             <Link href={"/"}>
+              <Image
+              src={"/header/Logowhite.png"}
+              alt="blue chip white logo"
+              width={64}
+              height={56}
+              />
+             </Link>
+          </div>
+            </span>
           <button className="text-white" onClick={() => setMenuOpen(false)}>
             <span className="material-icons">
               <X />{" "}
@@ -172,9 +183,9 @@ export default function Header() {
           {topNavItems.map((item, index) => (
             <Link key={item.name} href={item.href}>
               <div
-                className={`block text-sm font-medium ${
+                className={`block  p-[10px] hover:bg-[#f1faff77] hover:text-white rounded-md text-lg font-medium ${
                   activeTopIndex === index
-                    ? "text-blue-300"
+                    ? "text-white bg-[#f1faff77]"
                     : "hover:text-blue-300"
                 }`}
                 onClick={() => {

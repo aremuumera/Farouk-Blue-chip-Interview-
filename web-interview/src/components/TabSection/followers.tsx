@@ -18,7 +18,7 @@ const Followers = () => {
                         <div className='flex flex-row md:justify-center justify-end gap-[10px]'>
                             <div className='flex justify-center py-2 rounded-md bg-[#fff] gap-[10px] px-2'>
                                 <select
-                                    className='border-none outline-none text-[.8rem] w-[86px] text-zinc-500'
+                                    className='border-none bg-transparent outline-none text-[.8rem] w-[86px] text-zinc-500'
                                     name="" id="">
                                     <option value="Active">Active</option>
                                 </select>
