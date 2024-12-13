@@ -27,7 +27,7 @@ const Card: React.FC<CardProps> = ({
 }) => {
   return (
    <div>
-        <div className="bg-white w-full  lg:max-w-[545px]  min-h-[242px] rounded-[12px] p-[30px] mt-[20px]">
+        <div className="bg-white w-full  lg:max-w-[545px]  min-h-[242px] rounded-[12px] p-[12px] sm:p-[30px] mt-[20px]">
         <div className="justify-between  flex items-center">
             <div className="flex gap-3 items-center">
             <Image src={userImage} alt={username} width={46} height={46} />
@@ -85,7 +85,7 @@ const Card: React.FC<CardProps> = ({
         <div className="flex justify-between items-center">
             <h1 className="text-[12px] text-gray-500">Reply...</h1>
             <div className="flex gap-[20px] items-center">
-            <Image src="/tabs/overview/clip.png" alt="clip" width={19} height={19} />
+            <Image src="/tabs/overview/Clip.png" alt="clip" width={19} height={19} />
             <Image src="/tabs/overview/marker.png" alt="marker" width={19} height={19} />
             </div>
         </div>
